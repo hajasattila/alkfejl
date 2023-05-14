@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.teszt.HelloApplication">
+   <children>
+      <MenuBar layoutX="10.0" layoutY="10.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Rendelések">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#addnewOrder" text="Új rendelés" />
+                  <MenuItem mnemonicParsing="false" text="Listázás" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <TableView fx:id="tableview" layoutX="2.0" layoutY="36.0" prefHeight="359.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="customer" prefWidth="75.0" text="Customer" />
+          <TableColumn fx:id="title" prefWidth="75.0" text="Titulus" />
+            <TableColumn fx:id="portion" prefWidth="75.0" text="Porció" />
+            <TableColumn fx:id="delivery" prefWidth="75.0" text="Delivery" />
+            <TableColumn fx:id="payment" prefWidth="75.0" text="Payment" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
